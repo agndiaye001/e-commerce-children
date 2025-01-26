@@ -4,6 +4,7 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 sudo apt-get update
+sudo apt-get install fontconfig openjdk-17-jre
 sudo apt-get install jenkins
 
 #java installation
@@ -18,6 +19,7 @@ OpenJDK 64-Bit Server VM (build 17.0.13+11-Debian-2, mixed mode, sharing)
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 sudo apt update
 ss -lnt
+sudo nano /ect/default/jenkins
 sudo nano  /lib/systemd/system/jenkins.service  (port 8081)
 jenkins su
 
