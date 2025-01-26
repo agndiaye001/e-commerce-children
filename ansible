@@ -3,3 +3,11 @@ sudo apt update
 sudo apt install software-properties-common
 sudo add-apt-repository -yes --update ppa:ansible/ansible
 sudo apt install ansible
+
+
+# ssh - add agent ssh 
+eval "$(ssh-agent -s)"
+ssh-add -l
+sudo cat /home/ubuntu/.ssh/id_rsa.pub 
+#copier la clé dans l'autre machine ( sudo nano  /home/ubuntu/.ssh/authorized_keys ) 
+ssh ubuntu@ec2-35-180-118-159.eu-west-3.compute.amazonaws.com
