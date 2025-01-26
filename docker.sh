@@ -14,8 +14,3 @@ sudo apt-get update
 
  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
- # Install ansible
-sudo apt update
-sudo apt install software-properties-common
-sudo add-apt-repository -yes --update ppa:ansible/ansible
-ssudo apt install ansiblse
