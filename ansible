@@ -11,3 +11,9 @@ ssh-add -l
 sudo cat /home/ubuntu/.ssh/id_rsa.pub 
 #copier la clé dans l'autre machine ( sudo nano  /home/ubuntu/.ssh/authorized_keys ) 
 ssh ubuntu@ec2-35-180-118-159.eu-west-3.compute.amazonaws.com
+
+
+$ sudo visudo
+#Ajoute 
+ ansible ALL=(ALL) NOPASSWD: ALL
+
