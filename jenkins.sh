@@ -15,7 +15,10 @@ OpenJDK Runtime Environment (build 17.0.13+11-Debian-2)
 OpenJDK 64-Bit Server VM (build 17.0.13+11-Debian-2, mixed mode, sharing)
 
 
-cat /var/lib/jenins/initialAdminPasswd
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+sudo apt update
+ss -lnt
+sudo nano  /lib/systemd/system/jenkins.service  (port 8081)
 jenkins su
 
 
